@@ -1,0 +1,74 @@
+[
+  {
+    "id": "alley", "name": "ALLEY", "epithet": "The Queen of Katraj", "number": "001", "emoji": "👑", "featured": true,
+    "photo": "assets/cats/alley.webp", "thumbnail": "assets/cats/alley-card.webp",
+    "country": "India", "location": "Katraj, Pune, India", "lat": 18.4545, "lng": 73.8596, "accuracy": "neighborhood", "date": "2025-01-10",
+    "caption": "Meet Alley, the fiery Queen cat of Katraj 👑 #katraj", "nameSource": "Instagram caption",
+    "traits": ["Regal", "Unimpressed", "Territorial"], "bio": "A calico monarch who governs from the nearest comfortable surface. A single glance is enough to silence her court.",
+    "stand": {"name": "QUEEN'S DECREE", "type": "Territory / Psychological", "ability": "ROYAL PRESENCE", "description": "Within her chosen territory, everyone instinctively makes room for Alley. The longer she sits without moving, the wider her dominion grows.", "limitation": "The spell breaks instantly if someone opens a can of tuna.", "stats": [4,3,3,4,5,4]},
+    "color": "#e7b857", "glyph": "♛", "quote": "You may approach. You may not touch the throne."
+  },
+  {
+    "id": "cocaine", "name": "COCAINE", "epithet": "The Sleepy Prince", "number": "002", "emoji": "💤",
+    "photo": "assets/cats/cocaine.webp", "thumbnail": "assets/cats/cocaine-card.webp",
+    "country": "India", "location": "Katraj, Pune, India", "lat": 18.4518, "lng": 73.8587, "accuracy": "neighborhood", "date": "2025-03-31",
+    "caption": "Meet Cocaine, the most lazy and sleepy male cat in Katraj.", "nameSource": "Instagram caption",
+    "traits": ["Sleepy", "Gentle", "Unbothered"], "bio": "A snowy-looking master of strategic inactivity. He has never rushed for a single thing, and somehow always wins.",
+    "stand": {"name": "DREAM STATIC", "type": "Defensive / Aura", "ability": "NAP FIELD", "description": "Creates a soothing field that slows movement and muffles noise. Opponents become overwhelmed by the need for a tiny nap.", "limitation": "The aura vanishes when Cocaine himself wakes up.", "stats": [2,1,4,5,3,5]},
+    "color": "#a7c6eb", "glyph": "☾", "quote": "Five more minutes. That is an order."
+  },
+  {
+    "id": "hona", "name": "HONA", "epithet": "The Café Spirit", "number": "003", "emoji": "☕",
+    "photo": "assets/cats/hona.webp", "thumbnail": "assets/cats/hona-card.webp",
+    "country": "India", "location": "Nine Lives Cat Cafe, Pune (approx.)", "lat": 18.5204, "lng": 73.8567, "accuracy": "city", "date": "2025-04-07",
+    "caption": "Paws, purrs and coffee vibes at Nine Lives Cat Cafe!", "nameSource": "Creative nickname",
+    "traits": ["Charming", "Curious", "Photogenic"], "bio": "A gray-and-white fluff with enormous amber eyes and a talent for finding the sunniest seat in the café.",
+    "stand": {"name": "VELVET FREQUENCY", "type": "Support / Emotion", "ability": "PURRSONA", "description": "A perfectly tuned purr nudges everyone nearby toward friendship, unexpected confessions, and a second cup of coffee.", "limitation": "Has no effect over the noise of a coffee grinder.", "stats": [2,4,3,3,5,4]},
+    "color": "#8daeff", "glyph": "✦", "quote": "The café is neutral territory. The treats are not."
+  },
+  {
+    "id": "campus-meowie", "name": "CAMPUS MEOWIE", "epithet": "The Camp Sage", "number": "004", "emoji": "🎓",
+    "photo": "assets/cats/campus-meowie.webp", "thumbnail": "assets/cats/campus-meowie-card.webp",
+    "country": "India", "location": "Near SGS Mall, Camp, Pune", "lat": 18.5167, "lng": 73.8794, "accuracy": "neighborhood", "date": "2025-01-20",
+    "caption": "Meet this handsome meowie from near SGS mall, Camp #camppune", "nameSource": "Creative nickname",
+    "traits": ["Skeptical", "Old soul", "Streetwise"], "bio": "Cream-colored, sharp-eyed, and apparently unconvinced that human beings have learned anything at all.",
+    "stand": {"name": "GOLDEN HOUR", "type": "Perception / Field", "ability": "LAST LIGHT", "description": "Slows his perception of time during a fleeting patch of afternoon sunshine, allowing him to choose the ideal next step.", "limitation": "Power declines sharply when the sun slips behind a building.", "stats": [3,3,4,3,4,5]},
+    "color": "#f2bd75", "glyph": "☼", "quote": "You call it loitering. I call it research."
+  },
+  {
+    "id": "kurohana", "name": "KUROHANA", "epithet": "The Curious Shade", "number": "005", "emoji": "🪞",
+    "photo": "assets/cats/kurohana.webp", "thumbnail": "assets/cats/kurohana-card.webp",
+    "country": "Japan", "location": "Japan — city not yet confirmed", "lat": 36.2048, "lng": 138.2529, "accuracy": "country", "date": null,
+    "caption": "Instagram post tagged #japancat. Exact place and date not verified.", "nameSource": "Creative nickname",
+    "traits": ["Watchful", "Curious", "Mysterious"], "bio": "A bright-eyed tortoiseshell whose gaze through the window makes it feel like she knows more than the people on either side.",
+    "stand": {"name": "GLASS MIRAGE", "type": "Illusion / Boundary", "ability": "REFLECTION WALK", "description": "Can project a convincing phantom of herself into reflective surfaces, leading onlookers toward the wrong window.", "limitation": "Cannot cross a reflection without a clear line of sight.", "stats": [3,4,5,2,5,4]},
+    "color": "#d18dff", "glyph": "◇", "quote": "The window shows you only what I allow."
+  },
+  {
+    "id": "sora", "name": "SORA", "epithet": "The Wayfarer", "number": "006", "emoji": "🌙",
+    "photo": "assets/cats/sora.webp", "thumbnail": "assets/cats/sora-card.webp",
+    "country": "Japan", "location": "Japan — city not yet confirmed", "lat": 36.2048, "lng": 138.2529, "accuracy": "country", "date": null,
+    "caption": "A cat pictured on a path; post tagged #japancat, July 12 (year unverified).", "nameSource": "Creative nickname",
+    "traits": ["Observant", "Independent", "Wandering"], "bio": "A tabby-and-white traveler who pauses mid-journey, turns around, and decides whether you deserve the honor of following.",
+    "stand": {"name": "WAYFARER'S ECHO", "type": "Reconnaissance / Spatial", "ability": "AFTERIMAGE TRAIL", "description": "Leaves quiet afterimages along paths already traveled. Every shadow becomes a breadcrumb visible only to trusted companions.", "limitation": "The trail fades when rain touches the ground.", "stats": [3,5,4,2,4,3]},
+    "color": "#7cd5d2", "glyph": "↟", "quote": "A road is a promise, not a destination."
+  },
+  {
+    "id": "kali", "name": "KALI", "epithet": "The Melting Phantom", "number": "007", "emoji": "🖤",
+    "photo": "assets/cats/kali.webp", "thumbnail": "assets/cats/kali-card.webp",
+    "country": "Unplaced", "location": "Location awaiting confirmation", "lat": null, "lng": null, "accuracy": "unknown", "date": null,
+    "caption": "Black-and-white cat resting beneath a vehicle; posted with #catlife and #catlovers.", "nameSource": "Creative nickname",
+    "traits": ["Relaxed", "Elusive", "Bold"], "bio": "The black-and-white wanderer who treats the space under parked vehicles as a personal secret hideout.",
+    "stand": {"name": "MELTING POINT", "type": "Stealth / Defensive", "ability": "SHADOW POOL", "description": "Flattens the outline of nearby shadows, allowing Kali to disappear in plain sight under the smallest cover.", "limitation": "A bright overhead light makes the exit extremely awkward.", "stats": [3,4,5,3,3,4]},
+    "color": "#b2a1db", "glyph": "◐", "quote": "I was here the whole time. You weren't looking."
+  },
+  {
+    "id": "window-twins", "name": "MIKA & MOMO", "epithet": "The Window Twins", "number": "008", "emoji": "🐾",
+    "photo": "assets/cats/twins.webp", "thumbnail": "assets/cats/twins-card.webp",
+    "country": "USA", "location": "New York, USA — exact location unconfirmed", "lat": 42.9538, "lng": -75.5268, "accuracy": "state", "date": "2025-11-06",
+    "caption": "Two tabby cats on a chair behind a railing; original post tagged #newyorkcat.", "nameSource": "Creative nicknames for two cats",
+    "traits": ["Inseparable", "Suspicious", "Coordinated"], "bio": "Two tabby sentries. One watches the street, the other watches you. Neither has accepted the explanation for your presence.",
+    "stand": {"name": "DOUBLE EXPOSURE", "type": "Dual / Illusion", "ability": "TWIN PARALLAX", "description": "Mika and Momo can swap their perceived positions for a blink, making every observer second-guess which twin moved first.", "limitation": "Requires both cats to be awake and within sight of each other.", "stats": [4,5,4,3,4,3]},
+    "color": "#ecb99a", "glyph": "Ⅱ", "quote": "Two witnesses. Zero answers."
+  }
+]
