@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#100d1b" />
+  <meta name="description" content="Manza Ganza — real cats, fictional Stands, and a global chronicle of the cats we meet. Explore the Catdex, map, and Alley’s illustrated royal adventures." />
+  <meta property="og:title" content="Manza Ganza | The Stand Archives" />
+  <meta property="og:description" content="Real cats. Fictional Stands. A global cat chronicle." />
+  <meta property="og:image" content="https://manza.rohanmarar.com/assets/art/site-cover.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzxR2pA5W7dUVObKN9knqOCaE=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="star-noise" aria-hidden="true"></div>
+  <div class="topline">✦ &nbsp; FROM THE STREETS OF INDIA TO THE ALLEYS OF JAPAN &nbsp; ✦ &nbsp; EVERY CAT HAS A SECRET</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Manza Ganza home">
+      <span class="brand-icon"><svg width="46" height="42" viewBox="0 0 46 42" fill="none" aria-hidden="true"><path d="M6 30V11l8 6c6-3 12-3 18 0l8-6v19c-2 5-9 9-17 9S8 35 6 30Z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="m14 27 4 1m14-1-4 1M20 32l3 2 3-2M12 32l-8 1m9 2-8 3m28-6 9 1m-9 2 8 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <span class="brand-words"><span>MANZA GANZA</span><small>マンザ・ガンザ <b>✦</b></small></span>
+    </a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#top" class="active">⌂ <span>Home</span></a>
+      <a href="#catdex">✤ <span>Catdex</span></a>
+      <a href="#atlas">♧ <span>Map</span></a>
+      <a href="#novel">▤ <span>Graphic Novel</span></a>
+      <a href="#about">ⓘ <span>About</span></a>
+    </nav>
+    <a class="instagram-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/manza.ganza/"><span>◎</span><span class="instagram-label">Follow @manza.ganza ↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-art-side">
+        <div class="purple-haze"></div>
+        <div class="hero-art" id="hero-art" role="img" aria-label="Illustrated Alley the calico cat with a royal purple Stand behind her"></div>
+        <div class="hero-headline">
+          <div class="eyebrow light">✦ WELCOME TO MANZA GANZA</div>
+          <h1 id="hero-heading">THE<br /><span>STAND</span><br />ARCHIVES</h1>
+          <p>Real cats. Fictional Stands.<br />A global cat chronicle.</p>
+          <a class="button-primary" href="#catdex">Explore the Catdex <span>→</span></a>
+        </div>
+        <span class="hero-rune rune-one" aria-hidden="true">ゴ</span>
+        <span class="hero-rune rune-two" aria-hidden="true">ゴ</span>
+        <span class="hero-art-credit">ORIGINAL CAT PHOTOS × FICTIONAL POWER LORE</span>
+      </div>
+      <div class="hero-profile" id="featured-profile">
+        <div class="gold-eyebrow"><span>♛</span> FEATURED CAT <span class="mini-line"></span></div>
+        <div class="profile-row"><div><h2 id="feature-name">ALLEY</h2><div class="feature-epithet" id="feature-epithet">The Queen of Katraj</div></div><span class="index-badge" id="feature-number">#001</span></div>
+        <div class="feature-divider"></div>
+        <div class="feature-label">STAND</div>
+        <h3 id="feature-stand">「QUEEN'S DECREE」</h3>
+        <p class="stand-desc" id="feature-description">A royal presence that bends the space around her, forcing all other beings to recognize her authority.</p>
+        <div class="stats-visual"><div class="radar-wrap"><svg id="feature-radar" viewBox="0 0 310 270" role="img" aria-label="Featured cat Stand ability stats"></svg></div></div>
+        <div class="stat-lower"><span>✦ <span id="feature-type">TERRITORY / PSYCHOLOGICAL</span></span><button class="link-inline" id="feature-open" type="button">Full character file ↗</button></div>
+      </div>
+    </section>
+
+    <section class="roster-shell" aria-labelledby="roster-title">
+      <div class="strip-heading"><span class="tiny-title" id="roster-title">THE CURRENT CAST</span><span class="roster-hint">SELECT A CAT TO AWAKEN THEIR STAND ✦</span></div>
+      <div class="roster" id="roster"><div class="loading">Awakening the Catdex…</div></div>
+    </section>
+
+    <section class="dashboard" aria-label="Manza Ganza world overview">
+      <div class="dashboard-panel map-preview-panel">
+        <div class="panel-title"><span>◎</span><h2>GLOBAL CAT MAP</h2></div>
+        <div class="filter-pills" id="mini-filters">
+          <button class="pill selected" data-region="All">All</button><button class="pill" data-region="India">🇮🇳 India</button><button class="pill" data-region="Japan">🇯🇵 Japan</button><button class="pill" data-region="USA">🇺🇸 USA</button>
+        </div>
+        <div class="map-holder"><div id="mini-map" class="leaflet-map" aria-label="Interactive global cat map"></div><div class="map-attribution-overlay">Pins indicate general areas, not exact addresses</div></div>
+        <a class="button-line" href="#atlas">View Full Map <span>→</span></a>
+      </div>
+      <div class="dashboard-panel novel-preview-panel">
+        <div class="panel-title"><span>▥</span><h2>THE MANZA GANZA GRAPHIC NOVEL</h2></div>
+        <a class="novel-preview-image" href="#novel" aria-label="Read Alley: A Queen's Day"><img src="assets/art/royal-throne.webp" alt="Comic artwork of Alley reigning on a golden throne" /><img src="assets/art/royal-nap.webp" alt="Alley sleeping" /><img src="assets/art/royal-sunset.webp" alt="Alley overlooking the city" /></a>
+        <div class="novel-preview-bottom"><p><em>Alley: A Queen's Day</em><br />Royal duties, naps, and world domination.</p><a class="button-line" href="#novel">Read Now <span>→</span></a></div>
+      </div>
+      <div class="dashboard-panel sightings-panel">
+        <div class="panel-title"><span>◎</span><h2>RECENT SIGHTINGS</h2></div>
+        <div id="recent-sightings" class="recent-list"><div class="loading">Loading field notes…</div></div>
+        <a class="button-line instagram-button" href="https://www.instagram.com/manza.ganza/" target="_blank" rel="noopener noreferrer">View on Instagram <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="chapter-heading" id="catdex">
+      <div><span class="eyebrow">FIELD GUIDE // VOLUME 001</span><h2>THE <i>CATDEX</i></h2><p>Every legendary Stand begins with a very real cat.</p></div>
+      <div class="catdex-counter"><b id="total-cats">08</b><span>CHARACTER FILES<br />AND COUNTING</span></div>
+    </section>
+    <div class="catdex-controls"><label class="search-control"><span>⌕</span><input id="cat-search" type="search" placeholder="Search cats, powers or places…" aria-label="Search cat profiles" /></label><div id="catdex-filters" class="filter-pills"><button class="pill selected" data-region="All">All cats</button><button class="pill" data-region="India">India</button><button class="pill" data-region="Japan">Japan</button><button class="pill" data-region="USA">USA</button><button class="pill" data-region="Unplaced">Unplaced</button></div></div>
+    <section class="catdex-grid" id="catdex-grid" aria-label="Cat character cards"></section>
+    <div class="between-note">Names, powers and lore are fiction. Cat photographs and the documented encounters are real. <span>✦</span></div>
+
+    <section class="atlas-section" id="atlas">
+      <div class="section-topline"><span>THE WORLD IS OUR TERRITORY</span><span>✦ CHRONICLE OF ENCOUNTERS ✦</span></div>
+      <div class="chapter-heading atlas-heading"><div><span class="eyebrow">SIGHTING RECORD // GLOBAL</span><h2>THE <i>CAT ATLAS</i></h2><p>Where we encountered our furry Stand users. Markers deliberately indicate approximate areas.</p></div><a class="button-primary" href="studio.html">+ Add a sighting <span>→</span></a></div>
+      <div class="atlas-layout"><div class="atlas-map-wrap"><div id="full-map" class="leaflet-map" aria-label="Cat atlas interactive map"></div><div class="map-legend">✦ Approximate location · Click a glowing marker to meet its cat</div></div><aside class="atlas-sidebar"><div class="atlas-sidebar-top"><h3>WORLDWIDE <i>ENCOUNTERS</i></h3><p id="atlas-counter">Loading sightings…</p></div><div class="filter-pills" id="atlas-filters"><button class="pill selected" data-region="All">All</button><button class="pill" data-region="India">India</button><button class="pill" data-region="Japan">Japan</button><button class="pill" data-region="USA">USA</button></div><div class="atlas-entries" id="atlas-entries"></div><p class="location-note">Some sightings only identify a country or state. Pins at that scale are illustrative, not precise GPS coordinates. Unverified locations are excluded until confirmed.</p></aside></div>
+    </section>
+
+    <section class="novel-section" id="novel">
+      <div class="section-topline"><span>A MANZA GANZA ORIGINAL</span><span>✦ SHORT GRAPHIC STORY ✦</span></div>
+      <div class="chapter-heading novel-heading"><div><span class="eyebrow">ISSUE 001 // THE ROYAL CHRONICLES</span><h2>ALLEY: <i>A QUEEN'S DAY</i></h2><p>A very dramatic day in the life of a cat who does very little.</p></div><div class="royal-seal">♛<small>ISSUE<br />01</small></div></div>
+      <div class="comic-story" aria-label="Alley, A Queen's Day — short illustrated comic">
+        <div class="comic-panel comic-intro"><div class="comic-caption">CHAPTER ONE · A KINGDOM NEAR KATRAJ</div><img src="assets/art/royal-throne.webp" alt="Illustration: Alley majestically seated on her throne" /><div class="comic-bubble bubble-top">The kingdom awakens.<br />Its Queen does not.</div><div class="comic-label">HER MAJESTY, ALLEY.</div></div>
+        <div class="comic-panel comic-photo"><img src="assets/cats/alley.webp" alt="Real Alley, a calico cat, lounging regally" /><div class="comic-bubble bubble-bottom">My loyal subjects…<br />fetch the breakfast.</div></div>
+        <div class="comic-panel comic-sleep"><div class="comic-caption">11:43 AM — THE ROYAL AGENDA</div><img src="assets/art/royal-nap.webp" alt="Illustration: Alley peacefully sleeping" /><div class="comic-bubble bubble-bottom">An exhausting morning<br />of being magnificent.</div><span class="sound-effect">Zzz...</span></div>
+        <div class="comic-panel comic-power"><div class="stand-crown" aria-hidden="true">♛</div><div class="comic-caption">STAND ACTIVATED</div><h3>「QUEEN'S<br />DECREE」</h3><p><em>Royal Presence</em> — All beings within range must acknowledge her superiority.</p><span class="comic-sfx">ゴゴゴゴ</span></div>
+        <div class="comic-panel comic-sunset"><img src="assets/art/royal-sunset.webp" alt="Illustration: Alley surveying the sunset over her kingdom" /><div class="comic-bubble bubble-top">Another peaceful day.<br />Another empire secured.</div></div>
+        <div class="comic-panel comic-outro"><div class="end-crown">♕</div><span>TO BE CONTINUED...</span><h3>THE QUEEN HAS<br />LEFT THE THRONE.</h3><p>She will be back in roughly eleven hours. Unless snacks arrive sooner.</p><a href="#catdex" class="button-line">Meet the other Stand users →</a></div>
+      </div>
+      <p class="comic-disclaimer">The illustrated panels are concept art. Original cat photography is from Manza Ganza; fictional Stand lore is our own.</p>
+    </section>
+
+    <section class="feed-section" id="feed"><div class="chapter-heading"><div><span class="eyebrow">DIRECT FROM THE CAT CHRONICLE</span><h2>THE <i>FIELD NOTES</i></h2><p id="feed-status">Explore our documented cats, and follow fresh adventures on Instagram.</p></div><a class="button-primary" href="https://www.instagram.com/manza.ganza/" target="_blank" rel="noopener noreferrer">Open Instagram ↗</a></div><div class="feed-grid" id="instagram-feed"></div></section>
+
+    <section class="about-section" id="about"><div class="about-symbol">✦<span>MG</span>✦</div><div><span class="eyebrow">NOT PETS. LEGENDS.</span><h2>REAL CATS.<br /><i>INCREDIBLE STORIES.</i></h2><p>Manza Ganza is a little world built by two people who love meeting cats. We collect real encounters in India, Japan, and the United States, then imagine the wonderfully overpowered characters hiding behind those unimpressed faces.</p><p>Every cat is a protagonist. Every sighting is a chapter. Every nap is suspicious.</p><div class="about-actions"><a class="button-primary" href="https://www.instagram.com/manza.ganza/" target="_blank" rel="noopener noreferrer">Follow the adventures ↗</a><a class="button-line" href="studio.html">Log a cat →</a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand">MANZA GANZA <span>✦</span></div><p>REAL CATS · FICTIONAL STANDS · LIMITLESS MEOWS</p><div><a href="https://www.instagram.com/manza.ganza/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="studio.html">Cat Studio ↗</a><a href="#top">Back to top ↑</a></div><small>Made with love, imagination, and a deeply unreasonable amount of cat appreciation. Independent fan-inspired original fiction; not affiliated with JoJo's Bizarre Adventure or its creators.</small></footer>
+
+  <dialog class="cat-dialog" id="cat-dialog" aria-label="Cat character dossier"><button class="dialog-close" id="dialog-close" aria-label="Close character file">✕</button><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
