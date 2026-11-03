@@ -45,6 +45,15 @@ python3 -m http.server 8000
 
 Visit `http://localhost:8000/`. Don't open `index.html` via `file://`; the browser blocks local JSON fetches in that mode. The map needs an Internet connection for tiles (CARTO/OpenStreetMap), and Google Fonts need Internet as well (system fallbacks included).
 
+## New: meet the fictional founding admins
+
+The **first two sections** of the homepage introduce **Manza** (the immortal wizard-scientist founder) and **Ganza** (the innocent co-administrator living in Japan with Samruddhi Dhon), before the Alley Stand Archives hero. Their photographs are located at:
+
+- `assets/founders/manza.webp` — supplied photo of the calico plush cat.
+- `assets/founders/ganza.webp` — supplied photo of the brown plush puppy.
+
+Their biographies are **original satirical alternate-history fiction**, not factual claims about scientific discoveries or historical figures. This update uses the existing stylesheet and deployment workflow, so it needs no new JS or workflow changes.
+
 ## 2. What's included
 
 - `index.html`, `styles.css`, `app.js`: no-framework responsive website, mobile menu, featured cat selection, Stand radar chart, search, filters, shareable cat character dossiers (`#cat/alley`).
